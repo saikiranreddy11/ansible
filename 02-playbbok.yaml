@@ -1,5 +1,6 @@
   - name: ensure nginx is at the latest version
     hosts: mongodb
+    become: yes
     tasks:
     - name: Install the latest version of Apache
       ansible.builtin.yum:
