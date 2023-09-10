@@ -5,4 +5,4 @@
   tasks:
   - name : accessing the varlabes form a file
     ansible.builtin.debug: 
-      msg: "my name's {{full_name}},my course's {{devops}},duration is {{duration}}"
+      msg: "my name's {{full_name}},my course's {{course}}duration is {{duration}}"
