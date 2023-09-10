@@ -2,5 +2,5 @@
 roboshop-in-dev-db-mongodb-01.saikiransudhireddy.com
 
 [mongodb:vars]
-mongodb_username: mongodb_admin
-MONGO_DB: categories
+mongodb_username=mongodb_admin
+MONGO_DB=categories
