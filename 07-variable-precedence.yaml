@@ -1,0 +1,16 @@
+- name: this is example to check the precendence of the variable
+  hosts: mongodb
+  vars:
+    NAME: saikiran-play
+  vars_files: 
+    02-variables_file.yaml
+   vars_prompt: 
+    - name: NAME
+      prompt: Enter your name
+      private: false
+  tasks:
+  - name: checking the precedence of the variable
+    vars:
+      NAME: saikiran-task
+    ansible.builtin.debug:
+      msg: "my name is {{NAME}}"
