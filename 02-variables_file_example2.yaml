@@ -1,6 +1,6 @@
 - name: This ia an another example to access variables from the file
   hosts: localhost
-  vars_file: 
+  vars_files: 
     - 02-variables_file.yaml
   tasks:
   - name : accessing the varlabes form a file
