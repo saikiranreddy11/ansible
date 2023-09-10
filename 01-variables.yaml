@@ -1,0 +1,10 @@
+- name: This is an example for variables 
+  hosts: localhost
+  vars: 
+    name: sai kiran reddy
+    course: devops
+    duration: 3 months
+  tasks:
+  - name: this is the task to print the varible
+    ansible.builtin.debug:
+      msg: "my name is {{name}}. my course is {{course}}, and the duration is {{duration}}"

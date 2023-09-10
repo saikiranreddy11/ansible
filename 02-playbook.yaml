@@ -2,11 +2,11 @@
     hosts: mongodb
     become: yes
     tasks:
-    - name: Install the latest version of Apache
+    - name: Install the latest version of nginx
       ansible.builtin.yum:
         name: nginx
         state: installed
-    - name: Start service httpd, if not started
+    - name: Start service , if nginx not started
       ansible.builtin.service:
         name: nginx
         state: started
