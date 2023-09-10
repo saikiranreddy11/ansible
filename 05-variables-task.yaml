@@ -12,6 +12,5 @@
     vars:
       full_name: saikiran reddy sudhireddy
       job: Devops engineer
-      duration: Lifetime
     ansible.builtin.debug:
       msg: "my fullname is {{full_name}}, job is {{job}},duration is {{duration}}"
