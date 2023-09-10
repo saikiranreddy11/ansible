@@ -2,8 +2,8 @@
   hosts: mongodb
   vars:
     NAME: saikiran-play
-  vars_files: 
-  - 02-variables_file.yaml
+  # vars_files: 
+  # - 02-variables_file.yaml
   vars_prompt: 
   - name: NAME
     prompt: Enter your name
