@@ -7,11 +7,11 @@
   tasks:
   - name: printing the values
     ansible.built.debug:
-      msg "my fullname is {{full_name}}, course is {{course}},duration is {{duration}}"
+      msg: "my fullname is {{full_name}}, course is {{course}},duration is {{duration}}"
   - name: overriding the values
     vars:
       full_name: saikiran reddy sudhireddy
       job: Devops engineer
       duration: Lifetime
     ansible.built.debug:
-      msg "my fullname is {{full_name}}, job is {{job}},duration is {{duration}}"
+      msg: "my fullname is {{full_name}}, job is {{job}},duration is {{duration}}"
