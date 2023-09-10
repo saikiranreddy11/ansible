@@ -1,6 +1,6 @@
 - name: connecting to the host
   hosts: mongodb
-   become: yes
+  become: yes
   tasks: 
   - name: pinging the node
     ansible.builtin.ping:
