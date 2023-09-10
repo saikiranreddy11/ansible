@@ -1,7 +1,7 @@
 - name: this is example to check the precendence of the variable
   hosts: mongodb
-  vars:
-    NAME: saikiran-play
+  # vars:
+  #   NAME: saikiran-play
   vars_files: 
   - 02-variables_file.yaml
   # vars_prompt: 
