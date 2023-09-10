@@ -9,7 +9,7 @@
     prompt: Enter your name
     private: false
   tasks:
-  # - name: checking the precedence of the variable
+  - name: checking the precedence of the variable
   #   vars:
   #     NAME: saikiran-task
     ansible.builtin.debug:
