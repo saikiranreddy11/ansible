@@ -1,7 +1,7 @@
 - name: This is an example for variables 
   hosts: localhost
   vars: 
-    name: sai kiran reddy
+    full-name: sai kiran reddy
     course: devops
     duration: 3 months
   tasks:
