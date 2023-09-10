@@ -1,7 +1,7 @@
 - name: example of the variable inheritance
   hosts: localhost
   vars:
-    full_name: sai kiran reddy
+  - full_name: sai kiran reddy
     course: DevOps
     duration: 3 months
   tasks:
@@ -10,7 +10,7 @@
       msg: "my fullname is {{full_name}}, course is {{course}},duration is {{duration}}"
   - name: overriding the values
     vars:
-      full_name: saikiran reddy sudhireddy
+    - full_name: saikiran reddy sudhireddy
       job: Devops engineer
       duration: Lifetime
     ansible.built.debug:
