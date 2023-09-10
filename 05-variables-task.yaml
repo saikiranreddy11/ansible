@@ -6,12 +6,12 @@
     duration: 3 months
   tasks:
   - name: printing the values
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "my fullname is {{full_name}}, course is {{course}},duration is {{duration}}"
   - name: overriding the values
     vars:
     - full_name: saikiran reddy sudhireddy
       job: Devops engineer
       duration: Lifetime
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "my fullname is {{full_name}}, job is {{job}},duration is {{duration}}"
