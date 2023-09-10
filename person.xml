@@ -1,0 +1,14 @@
+<person>
+    <name>saikiran reddy</name>
+    <dob>11091997</dob>
+    <address>
+        <permannetaddress>
+            <Hno>13-8</Hno>
+            <city>nakrekal</city>
+        </permanenentaddress>
+        <tempaddress>
+            <Hno>202</Hno>
+            <city>hyderabad</city>
+        </tempaddress>
+    </address>
+</person>

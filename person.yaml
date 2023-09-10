@@ -1,0 +1,26 @@
+name: saikiran reddy
+dob: 11091997
+address:
+  hno: 13-8
+  city: nakrekal
+
+
+
+- name: saikiran reddy
+  dob: 11091997
+  addresses:
+  - type: permaddress
+    hno: 13-8
+    city: nakrekal
+  - type: currentadd
+    hno: 533
+    city: florida      
+- name: saikiran reddy
+  dob: 11091997
+  addresses:
+  - type: permaddress
+    hno: 13-8
+    city: nakrekal
+  - type: currentadd
+    hno: 533
+    city: florida    

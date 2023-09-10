@@ -1,0 +1,29 @@
+{
+    "name": "saikiran reddy",
+    "DOB": "11091997",
+    "address":{
+        "HNO":"13-8",
+        "city":"nakrekal"
+    }
+
+}
+
+
+
+{
+    "name": "saikiran reddy",
+    "DOB": "11091997",
+    "address":[
+        {
+        "HNO":"13-8",
+        "city":"nakrekal",
+        "type": "permanentaddress"
+        },
+        "tempadd":{
+            "HNO":"202",
+            "city":"Hyderabad",
+            "type": "currentaddress"
+            }
+    ]
+
+}
