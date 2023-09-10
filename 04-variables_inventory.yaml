@@ -1,6 +1,6 @@
 - name: This is to access the variables from the inventory file
-  hosts: localhost
+  hosts: mongodb
   tasks:
   - name: printing the variables from inventory
     ansible.built.debug:
-      msg: "my fullname is {{full_name}}, course is {{course}},duration is {{duration}}"
+      msg: "username: {{mongodb_username}}, mondodb is is {{MONGO_DB}}"
