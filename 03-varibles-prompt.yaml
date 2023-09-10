@@ -10,4 +10,4 @@
   tasks: 
   - name: printing the variables in the prompt
     ansible.builtin.debug:
-      msg: "{{this is to prompt the name}}"
+      msg: "{{this is to prompt the name}},{{This is to enter the password of course}}"
