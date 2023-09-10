@@ -1,0 +1,8 @@
+- name: This ia an another example to access variables from the file
+  hosts: localhost
+  vars_file: 
+    - 02-variables_file.yaml
+  tasks:
+  - name : accessing the varlabes form a file
+    ansible.builtin.debug: 
+      msg: "my name's {{full_name}},my course's {{devops}},duration is {{duration}}"
