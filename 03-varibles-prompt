@@ -1,0 +1,13 @@
+- name: This is an example to prompt the variables
+  hosts: localhost
+  vars_prompt: 
+    - name: this is to prompt the name
+      prompt: Enter your name
+      private: false
+
+    - name: This is to enter the password of course
+      prompt: Enter the course password
+  tasks: 
+  - name: printing the variables in the prompt
+    ansible.builtin.debug:
+      msg: "{{this is to prompt the name}}"
