@@ -1,0 +1,7 @@
+- name: This is the example playbook for printing variables from command line
+  hosts: localhost
+  
+  tasks:
+  - name: printing the arguments
+    ansible.builtin.debug: 
+      msg: "course is {{COURSE}}"
