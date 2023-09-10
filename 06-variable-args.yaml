@@ -1,0 +1,10 @@
+- name: This is the example playbook for printing variables from command line
+  hosts: localhost
+  vars:
+  nam: {{firstname}}
+  dob: {{dateofbirth}}
+  age: {{age}}
+  tasks:
+  - name: printing the arguments
+    ansible.buildin.debug: 
+      msg: "firstname is {{nam}},date of birth is {{dob}},age is {{age}}"
