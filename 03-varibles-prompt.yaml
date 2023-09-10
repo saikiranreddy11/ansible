@@ -1,7 +1,7 @@
 - name: This is an example to prompt the variables
   hosts: localhost
   vars_prompt: 
-    - name: this_is_to_prompt_the_name
+    - name: this_is_to_prompt_the_name  #this is the variable name 
       prompt: Enter your name
       private: false
 
