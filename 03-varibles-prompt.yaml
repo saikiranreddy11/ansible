@@ -1,7 +1,7 @@
 - name: This is an example to prompt the variables
   hosts: localhost
   vars_prompt: 
-    - name: this_is_ to_prompt_the_name
+    - name: this_is_to_prompt_the_name
       prompt: Enter your name
       private: false
 
@@ -10,4 +10,4 @@
   tasks: 
   - name: printing the variables in the prompt
     ansible.builtin.debug:
-      msg: "{{this_is_ to_prompt_the_name}}{{This_is_to_enter_the_password_of_course}}"
+      msg: "username:{{this_is_to_prompt_the_name}},password:{{This_is_to_enter_the_password_of_course}}"
