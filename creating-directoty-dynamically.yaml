@@ -30,4 +30,4 @@
 
   - name: printing the output
     ansible.builtin.debug:
-      msg: "{{ dir_check }}"
+      msg: "printing the output"
