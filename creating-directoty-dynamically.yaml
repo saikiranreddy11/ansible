@@ -11,5 +11,6 @@
       register: dir_check
       ignore_errors: true
 
-  - ansible.builtin.debug:
+  - name: printing the output
+    ansible.builtin.debug:
       msg: "{{dir_check}}"
