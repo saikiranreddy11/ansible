@@ -7,5 +7,5 @@
     ignore_errors: yes
   - name : printing the exit status
     ansible.builtin.debug:
-    msg: "{{output.rc}}"
+    msg: "{{register}}"
 
