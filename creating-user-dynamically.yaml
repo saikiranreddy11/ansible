@@ -1,9 +1,9 @@
 - name: This is the example to create an user dynamically
   hosts: localhost
   vars_prompt:
-- name: name_of_user
-  prompt: please enter the user to create
-  private: false
+  - name: name_of_user
+    prompt: please enter the user to create
+    private: false
   tasks:
   - name: checking the user
     ansible.builtin.command: id {{name_of_user}}
