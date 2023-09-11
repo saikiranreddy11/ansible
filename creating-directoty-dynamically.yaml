@@ -1,3 +1,20 @@
+# - name: Create Directory if Not Exists
+#   hosts: localhost
+#   vars_prompt:
+#   - name: directory_path
+#     prompt: please enter the path of directory
+#     private: false
+#   tasks: 
+#   - name: Check if the directory exists
+#     ansible.builtin.stat:
+#       path: "{{directory_path}}"
+#       register: dir_check
+#       ignore_errors: yes
+
+#   - name: printing the output
+#     ansible.builtin.debug:
+#       msg: "{{ dir_check }}"
+
 - name: Create Directory if Not Exists
   hosts: localhost
   vars_prompt:
@@ -7,7 +24,7 @@
   tasks: 
   - name: Check if the directory exists
     ansible.builtin.stat:
-      path: "{{directory_path}}"
+      path: "{{ directory_path }}"
       register: dir_check
       ignore_errors: yes
 
