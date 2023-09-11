@@ -4,7 +4,7 @@
   - name: executing the id roboshop command 
     ansible.builtin.command: id roboshop
     register: output
-    ignore_errors: yes
+    ignore_errors: true
   - name : printing the exit status
     ansible.builtin.debug:
     msg: "{{output}}"
