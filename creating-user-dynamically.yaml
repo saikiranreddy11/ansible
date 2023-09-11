@@ -12,6 +12,7 @@
 
 
   - name: Creating the user
+    become: yes
     ansible.builtin.user:
       name: "{{ name_of_user }}"
       state: present    
