@@ -32,7 +32,7 @@
       dir_exists: "{{ not dir_check.stat.exists }}"
 
   - name: Create the directory
-      ansible.builtin.file:
-        path: "{{ directory_path }}"
-        state: directory
-      when: not dir_check.stat.exists
+    ansible.builtin.file:
+      path: "{{ directory_path }}"
+      state: directory
+    when: not dir_check.stat.exists
