@@ -25,8 +25,11 @@
   - name: Check if the directory exists
     ansible.builtin.stat:
       path: "{{ directory_path }}"
-      register: dir_check
-      ignore_errors: yes
+      register  : dir_check
+      
+  - name: Set a variable to indicate directory existence
+      ansible.builtin.set_fact:
+        dir_exists: "{{ not dir_check.stat.exists }}"
 
   - name: Create the directory
       ansible.builtin.file:
