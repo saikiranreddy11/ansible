@@ -7,7 +7,7 @@
   tasks: 
   - name: Check if the directory exists
     ansible.builtin.stat:
-      path: "{{ directory_path }}"
+      path: "{{directory_path}}"
       register: dir_check
       ignore_errors: true
 
