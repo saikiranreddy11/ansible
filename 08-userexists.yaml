@@ -3,9 +3,9 @@
   tasks:
   - name: executing the id roboshop command 
     ansible.builtin.command: id roboshop
-    register: output.rc
+    register: output
     ignore_errors: yes
   - name : printing the exit status
     ansible.builtin.debug:
-    msg: "{{register}}"
+    msg: "{{output}}"
 
