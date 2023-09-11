@@ -9,7 +9,7 @@
     ansible.builtin.stat:
       path: "{{directory_path}}"
       register: dir_check
-      ignore_errors: true
+      ignore_errors: yes
 
   - name: printing the output
     ansible.builtin.debug:
