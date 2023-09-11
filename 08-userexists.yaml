@@ -9,7 +9,7 @@
     ansible.builtin.debug:
       msg: "{{output.rc}}"
   - name: creating the user
-    becomes: yes
+    become: yes
     ansible.builtin.user:
       name: roboshop
     when: output.rc != 0
