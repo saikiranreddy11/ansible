@@ -28,6 +28,8 @@
       register: dir_check
       ignore_errors: yes
 
-  - name: printing the output
-    ansible.builtin.debug:
-      msg: "printing the output"
+  - name: Create the directory
+      ansible.builtin.file:
+        path: "{{ directory_path }}"
+        state: directory
+      when: not dir_check.stat.exists
