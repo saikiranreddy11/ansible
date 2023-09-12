@@ -1,5 +1,5 @@
 - name: this is an example for loops 2 for installing packages
-  hosts: '{{ target }}'
+  hosts: "{{ target }}"
   become: yes
   tasks:
   - name: installing the elements in the loop
