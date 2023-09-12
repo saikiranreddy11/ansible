@@ -8,6 +8,7 @@
       state: "{{item.state}}"
     loop: 
     - { name: 'nginx', state: 'installed' }
+    - { name: 'nginx', state: 'started' }
     - { name: 'postfix', state: 'absent' }
     - { name: 'cyrus-sasl-plain', state: 'installed' }
     - { name: 'mailx', state: 'absent'}
