@@ -1,0 +1,11 @@
+- name: this file is to practice the advanced loop
+  hosts: mongodb
+  tasks: 
+  - name: printing the advanced loop elements
+    ansible.builtin.yum:
+      msg: "the is checking the advanced loop:{{item.name},{{item.state}}} "
+    loop: 
+    - { name: 'nginx', state: 'started' }
+    - { name: 'postfix', state: 'installed' }
+    - { name: 'cyrus-sasl-plain', state: 'installed' }
+    - { name: 'mailx', state: 'absent'}
