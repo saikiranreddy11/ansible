@@ -1,5 +1,6 @@
 - name: this file is to practice the advanced loop
   hosts: mongodb
+  become: yes
   tasks: 
   - name: printing the advanced loop elements
     ansible.builtin.yum:
