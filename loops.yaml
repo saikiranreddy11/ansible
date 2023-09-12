@@ -1,0 +1,11 @@
+- name: This is the file to practice the YAML
+  hosts: localhost
+  tasks: 
+  - name: printing the loop elements
+    ansible.builtin.debug:
+      msg: "the loop element is {{item}}"
+    loop:
+    - saikiranreddy
+    - sai ram reddy
+    - daddy
+    - mummy

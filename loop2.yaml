@@ -1,0 +1,11 @@
+- name: this is an example for loops 2 for installing packages
+  hosts: localhost
+  tasks:
+  - name: installing the elements in the loop
+    ansible.builtin.yum:
+      name: {{item}}
+      state: installed
+    loop:
+    - postfix
+    - cyrus-sasl-plain
+    - mailx
