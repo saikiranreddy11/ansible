@@ -4,7 +4,7 @@
   tasks:
   - name: installing the elements in the loop
     ansible.builtin.yum:
-      name: {{item}}
+      name: "{{item}}"
       state: installed
     loop:  
     - postfix
