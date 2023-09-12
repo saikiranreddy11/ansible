@@ -1,5 +1,5 @@
 [mongodb]
-roboshop-in-dev-db-mongodb-01.saikiransudhireddy.com
+10.40.3.131
 
 [mongodb:vars]
 mongodb_username=mongodb_admin
