@@ -1,5 +1,5 @@
 - name: this is an example for loops 2 for installing packages
-  hosts: mongodb
+  hosts: "{{ target }}"
   become: yes
   tasks:
   - name: installing the elements in the loop
@@ -9,4 +9,4 @@
     loop:  
     - postfix
     - cyrus-sasl-plain
-    - mailx
+    - mailx 
