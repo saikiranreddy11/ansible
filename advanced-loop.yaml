@@ -3,8 +3,8 @@
   tasks: 
   - name: printing the advanced loop elements
     ansible.builtin.yum:
-      name: {{item.name}}
-      state: {{state}}
+      name: "{{item.name}}"
+      state: "{{state}}"
     loop: 
     - { name: 'nginx', state: 'started' }
     - { name: 'postfix', state: 'installed' }
